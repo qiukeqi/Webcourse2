@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+	
+.main-container{
+	margin-top: 3.25rem;
+}
+
+.todo_list {
+	width: 800px;
+	height: 800px;
+	margin: 20px auto;
+}
+
+.top {
+	height: 100px;
+	/* outline: red solid 1px; */
+}
+
+.title {
+	text-align: center;
+}
+
+.search {
+	text-align: center;
+}
+
+	
+.add-button{
+	background-color: #428bca;
+	border-color: #428BCA;
+	color: white;
+}
+
+
+.head {
+	height: 50px;
+}
+
+.content {
+	height: 600px;
+	/* outline: yellow solid 1px; */
+}
+
+.list {
+	margin-top: 10px;
+	height: 30px;
+	display: flex;
+	text-align: center;
+}
+
+.left {
+	width: 50%;
+	text-indent: 40px;
+}
+
+.time {
+	width: 30%;
+}
+
+.operation {
+	width: 20%;
+	text-align: center;
+}
+
+.operation button {
+	padding: 5px;
+	margin-left: 5px;
+	background-color: #428bca;
+	border-color: #357ebd;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+}
+
+.Book {
+	margin-bottom: 0.6rem;
+}
+
+	
+.read-process p{
+	float: left;
+	margin-right: 0.4rem;
+}
+
+.line {
+	text-decoration: line-through;
+	color: red;
+}

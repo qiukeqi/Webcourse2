@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- 满足js文件对jquery的依赖-->
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <title>Bootstrap登录表单密码隐藏显示 www.bootstrapmb.com</title>
+    <link rel="stylesheet" href="http://cdn.bootstrapmb.com/bootstrap/4.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/show-password-toggle.css">
+
+    <style>
+        form {
+            max-width: 330px;
+            margin-top: 17%;
+        }
+    </style>
+</head>
+<body class="text-center bg-light h-100">
+	<p hidden id="state">{{state}}</p>
+    <form id="upload-form" class="text-left mx-auto card p-4 w-100 p-2" action="/checkValidation" autocomplete="off">
+        <h1 class="h3 mb-3 text-center">密码隐藏显示</h1>
+        <label for="username" class="text-left ml-0">User name</label>
+        <input type="username" name="username" id="username" class="form-control mb-3" required autofocus>
+        <label for="password">密码</label>
+        <div class="input-group">
+            <input type="password" id="password" name="password" autocomplete="password" class="form-control rounded-right" spellcheck="false" autocorrect="off" autocapitalize="off" required>
+            <button id="toggle-password" type="button" class="d-none"
+                    aria-label="Show password as plain text. Warning: this will display your password on the screen."></button>
+        </div>
+        <button id="sign-in" class="btn btn-lg btn-primary btn-block mt-3" type="submit">
+            Sign in
+        </button>
+		<button id="register" class="btn btn-lg btn-primary btn-block mt-3" type="submit">
+		    Register
+		</button>
+    </form>
+    <script src="../static/js/show-password-toggle.js"></script>
+	<script src="../static/js/implementation/LoginInformation.js"></script>
+
+</body>
+</html>

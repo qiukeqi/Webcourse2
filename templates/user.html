@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 头像卡片介绍css网格样式 - www.bootstrapmb.com</title>
+	
+	<!-- 满足js文件对jquery的依赖-->
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	
+    <link rel="stylesheet" href="../static/css/user.css">
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+		<div class="card">
+		    <img src="../static/images/head_portrait/{{uid}}" alt="Person" class="card__image">
+		    <p class="card__name">{{username}}</p>
+			<div class="message">
+				<p class="mp">last login time&nbsp;:&nbsp;</p>
+				<p class="mp">{{ltime}}</p>
+			</div>
+		    
+		    <button id="toLogin" class="btn draw-border">开始阅读</button>
+		    <input id="newpassword" class="new-password" placeholder="New password">
+		</div>
+    </div>
+	<input id="hidden-input-field" type="file" style="display: none;" />
+    <!-- partial -->
+	<script src="../static/js/user.js"></script>
+</body>
+</html>
